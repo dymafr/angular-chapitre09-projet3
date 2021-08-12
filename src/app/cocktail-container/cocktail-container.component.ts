@@ -10,7 +10,7 @@ import { CocktailService } from '../shared/services/cocktail.service';
 })
 export class CocktailContainerComponent implements OnInit, OnDestroy {
   public cocktails: Cocktail[] = [];
-  public selectedCocktail: Cocktail;
+  public selectedCocktail?: Cocktail;
   private subscription: Subscription = new Subscription();
 
   constructor(private cocktailService: CocktailService) {}
